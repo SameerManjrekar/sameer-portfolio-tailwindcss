@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-Poppins bg-gray-200 dark:bg-gray-800;
+  }
+  li {
+    @apply list-none dark:text-white;
+  }
+}
+
+.section {
+  @apply container mx-auto py-8 px-2 md:px-20 md:py-14;
+}
+
+/* ::-webkit-scrollbar {
+  scroll-behavior: smooth;
+} */
