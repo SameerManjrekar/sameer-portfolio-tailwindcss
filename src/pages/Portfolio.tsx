@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Project1Img from "../assets/web1.png";
 import Project2Img from "../assets/web2.png";
 import Project3Img from "../assets/web3.png";
@@ -18,48 +20,78 @@ const Portfolio = () => {
         domain and I have learnt a lot in working on these projects.
       </p>
       {/* Images */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
         <div className="basis-1/3 flex-1">
-          <img
-            src={Project1Img}
-            alt="project-1"
-            className="rounded-lg object-cover"
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9, rotate: -10, borderRadius: "100%" }}
+          >
+            <img
+              src={Project1Img}
+              alt="project-1"
+              className="rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
         <div className="basis-1/3 flex-1">
-          <img
-            src={Project2Img}
-            alt="project-2"
-            className="rounded-lg object-cover"
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9, rotate: -10, borderRadius: "100%" }}
+          >
+            <img
+              src={Project2Img}
+              alt="project-2"
+              className="rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
         <div className="basis-1/3 flex-1">
-          <img
-            src={Project3Img}
-            alt="project-3"
-            className="rounded-lg object-cover"
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9, rotate: -10, borderRadius: "100%" }}
+          >
+            <img
+              src={Project3Img}
+              alt="project-3"
+              className="rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
         <div className="basis-1/3 flex-1">
-          <img
-            src={Project4Img}
-            alt="project-4"
-            className="rounded-lg object-cover"
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9, rotate: -10, borderRadius: "100%" }}
+          >
+            <img
+              src={Project4Img}
+              alt="project-4"
+              className="rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
         <div className="basis-1/3 flex-1">
-          <img
-            src={Project5Img}
-            alt="project-5"
-            className="rounded-lg object-cover"
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9, rotate: -10, borderRadius: "100%" }}
+          >
+            <img
+              src={Project5Img}
+              alt="project-5"
+              className="rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
         <div className="basis-1/3 flex-1">
-          <img
-            src={Project6Img}
-            alt="project-6"
-            className="rounded-lg object-cover"
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9, rotate: -10, borderRadius: "100%" }}
+          >
+            <img
+              src={Project6Img}
+              alt="project-6"
+              className="rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
       </div>
     </div>
